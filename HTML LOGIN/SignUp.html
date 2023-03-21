@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+<body>
+    <!--         HEADER          -->
+
+    <div class="header">
+        <a href="#" class="logo">Ktorvi.ai</a>
+
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#ktorvi" style="--i:3">Ktorvi ai</a>
+            <a href="#contact" style="--i:4">Contact Us</a>
+        </nav>
+    </div>
+    
+    <!--         CONTAINER       -->
+    <div id="home" class="container">
+        <div class="box">
+            <h2>Signup</h2>
+            <form action="#">
+
+                <div class="input-box1">
+                    <input type="text" clas="name" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="input-box2">
+                    <input type="text" clas="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="input-box3">
+                    <input type="text" clas="email" required>
+                    <label>Email</label>
+                </div>
+
+                <button class="signup-button" type="submit"><a href="login.html">Create Account</a></button>
+                <div class="login-link"><a href="login.html">Already have an Account?</a></div>
+
+            </form>
+        </div>
+    </div>
+
+<!--        ABOUT SECTION           -->
+    <section id="about" class="about">
+    <div class="about-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Andrew Tate</h1>
+        <h3>And I'm a <span class="multiple-text">4x Kickbox World Champion</span></h3>
+
+        <p> “Freedom will only come when you no longer trade your time for money.” <br>
+            “Do the impossible and you'll never doubt yourself ever again.” <br>
+            “Your mind must be stronger than your feelings.” 
+        </p>
+
+        <div class="social-media">
+            <a href="#" style="--i:5"><i class='bx bxl-facebook'></i></a>
+            <a href="#" style="--i:6"><i class='bx bxl-twitter' ></i></a>
+            <a href="#" style="--i:7"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="#" style="--i:8"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        <a href="https://tateshustlers.com/" class="btn">Hustlers University</a>
+    </div>
+
+    <div class="about-img">
+        <img src="Pictures/andrew-tate.png" alt="">
+    </div>
+
+</section>
+
+<!--        KTORVI AI SECTION           -->
+<section id="ktorvi" class="ktorvi">
+    <div class="ktorvi-container">
+        <h3>Welcome students,</h3>
+        <h1>To <span class="multiple-text2">The War Room</span></h1>
+        <p>The War Room is a strong and vibrant Community of Men (age 18 - 85) 
+            who are unwaveringly dedicated to the pursuit of excellence in all areas of life.</p>
+
+        <p>Our Ongoing Mission is to ceaselessly empower ALL Men to become the very best versions 
+            of themselves through Physical, Mental, Emotional, Spiritual, and Financial development.</p>
+
+        <p>We wholeheartedly believe in his innocence and urge everyone to refrain from making any hasty and unjust judgments based on the sound-biting, 
+            selective editing, and out-of-context footage that has been presented on so many disreputable social media platforms world-wide.</p>
+        
+        <a href="https://thewarroom.ag/" class="btn2">War Room</a>
+
+        
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="slide first">
+                    <img src="Pictures/war room.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="Pictures/war room 2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="Pictures/war room 3.jpg" alt="">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+
+        <!--            SLIDE SCRIPT            -->
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementsById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+    </div>
+</section>
+
+<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
